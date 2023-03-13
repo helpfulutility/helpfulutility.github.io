@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js"></script>
+    <script src="changeColors.js"></script>
+    <title>Uppercase Converter</title>
+</head>
+
+<body id="body">
+    <header>
+        <h1>Pasa tus textos a mayúsculas o minúsculas</h1>
+        <img id="sol" class="sol" src="images/sol.png" alt="Modo día" onclick="darkMode()"></img>
+        <img id="luna" class="luna" src="images/luna.png" alt="Modo noche" onclick="darkMode()"></img>
+
+<script>
+  let dark = false;
+  
+  function darkMode() {
+    if(dark === false){
+        document.getElementById("sol").style.display="block";
+        document.getElementById("luna").style.display="none";
+        document.getElementById("body").style.backgroundColor = "black";
+        document.getElementById("body").style.color = "white";
+        dark = true;
+    }
+    
+    else{
+        document.getElementById("sol").style.display="none";
+        document.getElementById("luna").style.display="block";
+        document.getElementById("body").style.backgroundColor = "white";
+        document.getElementById("body").style.color = "black";
+        dark = false;
+    }
+  }
+</script>
+   
+    </header>
+
+    <div class="cuerpo">
+        <nav class="anuncios1"></nav>
+
+        <div class="contenido">
+            <div class="paste-area"><button onclick="paste()" class="paste-button">Pegar</button></div>
+            <textarea oninput="clearConvertedText()"name="usuario" id="usuario" placeholder="Escriba o pegue aquí su texto a convertir"></textarea>
+            <noscript>
+                <div class="noJs">
+                  JavaScript está desactivado en su navegador.<br/> Por favor, active JavaScript para ver correctamente esta página.
+                </div>
+              </noscript>
+            
+            <div class="botones"><button id="capitalizeAll" class="eception" onclick="changeColor('capitalizeAll');toUppercase()">Todo mayúscula</button><button id="toLowercase" onclick="changeColor('toLowercase');toLowercase()">Todo minúscula</button> <button id="capitalizeAfter" onclick="changeColor('capitalizeAfter');capitalizeAfterPeriod()">Mayúscula detrás de punto</button> <button id="addSpaceAfterPeriod" onclick="changeColor('addSpaceAfterPeriod'); addSpaceAfterPeriod()">Espacio después de punto</button></div>
+
+            <div class="boton"><button class="converter" onclick="convert()">Convertir</button></div>
+
+            <div class="copy-area"><button onclick="copy()" class="copy-button">Copiar</button></div>
+            <textarea name="convertido" id="convertido" readonly></textarea>
+        </div>
+
+        <nav class="anuncios2"></nav>
+    </div>
+    </body>
+</html>

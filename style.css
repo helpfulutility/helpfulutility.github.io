@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.noJs{
+    position: fixed;
+    top:30%;
+    right: 0.5%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    body{
+    background-color: black;
+    color: white;
+    }
+    
+    #usuario {
+    background-color: white;
+    color: black;
+    }
+
+    #luna{
+        display: none;
+    }
+
+    #sol{
+        display: block;
+    }
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, rgb(71, 139, 212), rgb(48, 194, 239)) 1;
+    }
+
+    h1{
+        font-family: 'Mochiy Pop One', sans-serif;
+        font-size: 3vw;
+        /* color: rgb(29, 136, 231);
+        background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+    }
+
+
+    .luna{
+        position: absolute;
+        width:4vw;
+        top: 2%;
+        right: 2%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .sol{
+        position: absolute;
+        width:4vw;
+        top: 2%;
+        right: 2%;
+        display: none;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+   
+          
+
+
+.cuerpo{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+}
+
+.anuncios1{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(37, 171, 243);
+    order: 1;
+}
+
+.contenido{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    order: 2;
+}
+
+    #usuario{
+       width: 80%;
+       height: 25%;
+       margin-bottom: 5%;
+       font-size: 1.5vw;
+    }
+
+    ::placeholder{
+        /* color:white; */
+        display: none;
+    }
+
+    ::placeholder{
+        font-size: 1.5vw;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 6%;
+        margin-bottom: 2%;
+    }
+
+        .eception{
+            margin-left: 0% !important;
+        }
+
+        .botones>button{
+            margin-left: 4%;
+            width: 10vw;
+            height: 3vh;
+            font-size: 0.65vw;
+            font-weight: bold;
+            border-radius: 11%;
+            border: 0px;
+            background-color: red;
+            color: white;
+        }
+
+            .botones>button:hover{
+                cursor: pointer;
+            }
+
+        .boton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 6%;
+            margin-bottom: 3%;
+        }
+
+        .converter{
+            width: 12vw;
+            height: 3vh;
+            font-size: 1vw;
+            font-weight: bold;
+            border-radius: 11%;
+            border: 0px;
+            background-color: rgb(71, 212, 134);
+            color: white;
+        }
+
+            .converter:hover{
+                cursor: pointer;
+            }
+
+    #convertido{
+        width: 80%;
+        height: 25%;
+        font-size: 1.5vw;
+    }
+
+.anuncios2{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(37, 171, 243);
+    order: 3;
+}
+
+textarea{
+    position: relative;
+}
+  
+ .copy-area{
+    display: flex;
+    width:80%;
+    background-color: rgb(113, 119, 119);
+    justify-content: end;
+    border: solid rgb(113, 119, 119) 3px;
+ }
+
+ .paste-area{
+    display: flex;
+    width:80%;
+    background-color: rgb(113, 119, 119);
+    justify-content: end;
+    border: solid rgb(113, 119, 119) 3px;
+ }
+  
