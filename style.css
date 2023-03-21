@@ -221,6 +221,18 @@ textarea{
     align-items: center;
     flex-direction: column;
  }
+
+ footer > a{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+ }
+
+ footer >  #overbox3{
+    width: 100%;
+    height: 90%;
+
+ }
   
 
  /* MENSAJE POLÍTICA DE PRIVACIDAD */
@@ -229,8 +241,6 @@ textarea{
     position: fixed;
     bottom: 0px;
     left: 25%;
-    width: 100%;
-    height: 80%;
     z-index: 999999;
     display: block;
 }
