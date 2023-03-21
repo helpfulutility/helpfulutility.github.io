@@ -188,3 +188,7 @@ $(function() {
 function popbox3() {
   $('#overbox3').toggle();
 }
+
+function dropMessage(){
+  document.getElementById("overbox3").style.display="none";
+}

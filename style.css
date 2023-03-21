@@ -217,6 +217,9 @@ textarea{
     width: 100%;
     height: 10%;
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
   
 
