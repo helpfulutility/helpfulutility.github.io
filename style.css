@@ -215,8 +215,7 @@ textarea{
 
  footer{
     width: 100%;
-    height: 15%;
-    background-color: aliceblue;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,6 +230,7 @@ textarea{
     bottom: 0px;
     left: 25%;
     width: 100%;
+    height: 80%;
     z-index: 999999;
     display: block;
 }
