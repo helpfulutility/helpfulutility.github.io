@@ -211,54 +211,55 @@ textarea{
     background-color: rgb(113, 119, 119);
     justify-content: end;
     border: solid rgb(113, 119, 119) 3px;
+    margin-bottom: 5%;
  }
 
  footer{
     width: 100%;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    line-height: 1.5;
  }
 
  footer > a{
-    height: 10%;
+    height: 3%;
     width: 100%;
     text-align: center;
+    text-decoration: none;
+    color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
  }
 
  footer >  #overbox3{
     width: 100%;
-    height: 90%;
-
+    height: 97%;
  }
   
 
  /* MENSAJE POLÍTICA DE PRIVACIDAD */
 
  #overbox3 {
-    position: fixed;
-    bottom: 0px;
-    left: 25%;
     z-index: 999999;
     display: block;
 }
 #infobox3 {
     margin: auto;
     position: relative;
-    top: 0px;
-    height: 58px;
     width: 100%;
     text-align:center;
-    background-color: #eeeeee;
 }
 #infobox3 p {
-    line-height:58px;
-    font-size:12px;
+    font-size:1vw;
     text-align:center;
 }
 #infobox3 p a {
     margin-right:5px;
     text-decoration: underline;
+    text-decoration: none;
+    font-weight: 700;
 }
