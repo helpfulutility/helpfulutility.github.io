@@ -211,6 +211,12 @@ textarea{
     justify-content: end;
     border: solid rgb(113, 119, 119) 3px;
  }
+
+ footer{
+    width: 100%;
+    height: 10%;
+    background-color: aliceblue;
+ }
   
 
  /* MENSAJE POLÍTICA DE PRIVACIDAD */
